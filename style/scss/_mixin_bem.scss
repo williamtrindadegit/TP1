@@ -1,0 +1,26 @@
+//Source: https://css-tricks.com/snippets/sass/bem-mixins/
+/*
+BEM – meaning block, element, modifier – is a front-end naming methodology thought up by the guys at Yandex. 
+It is a smart way of naming your CSS classes to give them more transparency and meaning to other developers.
+They are far more strict and informative, which makes the BEM naming convention ideal for teams 
+of developers on larger projects that might last a while.
+*/
+
+/// Block Element
+/// @access public
+/// @param {String} $element - Element's name
+@mixin element($element) {
+    &__#{$element} {
+      @content;
+    }
+  }
+  
+  /// Block Modifier
+  /// @access public
+  /// @param {String} $modifier - Modifier's name
+  @mixin modifier($modifier) {
+    &--#{$modifier} {
+      @content;
+    }
+  }
+  

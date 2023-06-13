@@ -1,0 +1,33 @@
+
+//source https://coolors.co/698f8c-74a4a4-a9c5c1-486662-45453c 
+
+
+/* SCSS RGB */
+$dark-cyan: rgba(105, 143, 140, 1);
+$verdigris: rgba(116, 164, 164, 1);
+$ash-gray: rgba(169, 197, 193, 1);
+$feldgrau: rgba(72, 102, 98, 1);
+$black-olive: rgba(69, 69, 60, 1);
+
+/* definition des variables pour les elements principaux */
+$color_menubar: $ash-gray;
+$color_text: $black-olive;
+$color_textActive: $verdigris;
+$color_textHover: $black-olive;
+$color_menubar_border :$ash-gray;
+$color_background: $ash-gray;
+
+$color_caroussel_bg: $ash-gray;
+$color_footer_bg: $black-olive;
+
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #698f8cff, #74a4a4ff, #a9c5c1ff, #486662ff, #45453cff);
+$gradient-right: linear-gradient(90deg, #698f8cff, #74a4a4ff, #a9c5c1ff, #486662ff, #45453cff);
+$gradient-bottom: linear-gradient(180deg, #698f8cff, #74a4a4ff, #a9c5c1ff, #486662ff, #45453cff);
+$gradient-left: linear-gradient(270deg, #698f8cff, #74a4a4ff, #a9c5c1ff, #486662ff, #45453cff);
+$gradient-top-right: linear-gradient(45deg, #698f8cff, #74a4a4ff, #a9c5c1ff, #486662ff, #45453cff);
+$gradient-bottom-right: linear-gradient(135deg, #698f8cff, #74a4a4ff, #a9c5c1ff, #486662ff, #45453cff);
+$gradient-top-left: linear-gradient(225deg, #698f8cff, #74a4a4ff, #a9c5c1ff, #486662ff, #45453cff);
+$gradient-bottom-left: linear-gradient(315deg, #698f8cff, #74a4a4ff, #a9c5c1ff, #486662ff, #45453cff);
+$gradient-radial: radial-gradient(#698f8cff, #74a4a4ff, #a9c5c1ff, #486662ff, #45453cff);

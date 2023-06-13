@@ -1,0 +1,47 @@
+@use 'variables' as vars;
+
+@use 'nav' as nv;
+@use 'carousel' as crsl;
+@use 'citation' as cit;
+@use 'flex_section1' as gf1;
+@use 'grid_section2' as gs2;
+@use 'cards' as crds;
+@use 'statistiques' as sts; 
+@use 'formulaire' as frm; 
+@use 'footer' as foo; 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap');
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Prompt', sans-serif;
+    background-color: vars.$color_background;
+  }
+  
+
+  
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+
+
+
+  
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
