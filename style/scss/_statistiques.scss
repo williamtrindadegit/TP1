@@ -1,0 +1,149 @@
+@use "variables" as vars;
+@use "mixin_bem" as mx;
+
+.statistique {
+  font-family: "Prompt";
+  background-color: vars.$color_background;
+
+  @include mx.element("pie") {
+    width: 50%;
+  }
+
+  @include mx.element("pourcentage") {
+    width: 49%;
+  }
+  @include mx.element("explication") {
+    max-width: 30rem;
+  }
+
+  @include mx.element("pourcentage") {
+    width: 49%;
+  }
+  @include mx.element("contentUploaded") {
+    font-style: italic;
+  }
+  @include mx.element("sold") {
+    font-style: italic;
+  }
+  @include mx.modifier("text") {
+    /* CSS declarations for `.block--modifier__element` */
+    font-family: "prompt";
+    font-size: x-large;
+  }
+}
+
+/**/
+/* SCSS HEX from coolors.co */
+$russian-violet: #0c0a3eff;
+$purple: #7b1e7aff;
+$raspberry-rose: #b33f62ff;
+$bittersweet: #f9564fff;
+$sunset: #f3c677ff;
+$aquamarine: #00ffc5ff;
+$celeste: #adf5ffff;
+$cerulean: #0075a2ff;
+$chocolate-cosmos: #481620ff;
+$blush: #d55672ff;
+
+$st1_color: $purple;
+$st2_color: $raspberry-rose;
+$st3_color: $bittersweet;
+$st4_color: $aquamarine;
+$st5_color: $chocolate-cosmos;
+$st6_color: $blush;
+
+$st1_val: 10%;
+$st2_val: 12%;
+$st3_val: 20%;
+$st4_val: 5%;
+$st5_val: 30%;
+$st6_val: 23%; // besoin que st1+st2+st3+st4+st5+st6 soit  100%
+
+$st1_ini: 0%;
+$st1_fin: $st1_ini + $st1_val;
+
+$st2_ini: $st1_fin;
+$st2_fin: $st2_ini + $st2_val;
+
+$st3_ini: $st2_fin;
+$st3_fin: $st3_ini + $st3_val;
+
+$st4_ini: $st3_fin;
+$st4_fin: $st4_ini + $st4_val;
+
+$st5_ini: $st4_fin;
+$st5_fin: $st5_ini + $st5_val;
+
+$st6_ini: $st5_fin;
+$st6_fin: $st6_ini + $st6_val;
+
+.pie-chart {
+  background: radial-gradient(circle closest-side, transparent 70%, white 0),
+    conic-gradient(
+      from 0deg,
+      $st1_color $st1_ini,
+      $st1_color $st1_fin,
+      $st2_color $st2_ini,
+      $st2_color $st2_fin,
+      $st3_color $st3_ini,
+      $st3_color $st3_fin,
+      $st4_color $st4_ini,
+      $st4_color $st4_fin,
+      $st5_color $st5_ini,
+      $st5_color $st5_fin,
+      $st6_color $st6_ini,
+      $st6_color $st6_fin
+    );
+  position: relative;
+  width: 500px;
+  min-height: 350px;
+  margin: 0;
+  outline: 1px solid #ccc;
+}
+.pie-chart h2 {
+  position: absolute;
+  margin: 1rem;
+}
+.pie-chart cite {
+  position: absolute;
+  bottom: 0;
+  font-size: 80%;
+  padding: 1rem;
+  color: gray;
+}
+.pie-chart figcaption {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  font-size: smaller;
+  text-align: right;
+}
+.pie-chart span:after {
+  display: inline-block;
+  content: "";
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.4em;
+  height: 0.8em;
+  border-radius: 0.2em;
+  background: currentColor;
+}
+
+.legend__text-st1 {
+  color: $st1_color;
+}
+.legend__text-st2 {
+  color: $st2_color;
+}
+.legend__text-st3 {
+  color: $st3_color;
+}
+.legend__text-st4 {
+  color: $st4_color;
+}
+.legend__text-st5 {
+  color: $st5_color;
+}
+.legend__text-st6 {
+  color: $st6_color;
+}

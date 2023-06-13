@@ -1,0 +1,65 @@
+// Styles par défaut pour toutes les résolutions
+.container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  // Styles pour la résolution Extra small (<576px)
+  @media (max-width: 575px) {
+    .container {
+      padding: 10px;
+    }
+    
+    // Autres styles pour la résolution Extra small
+    // ...
+  }
+  
+  // Styles pour la résolution Small (≥576px)
+  @media (min-width: 576px) {
+    .container {
+      padding: 20px;
+    }
+    
+    // Autres styles pour la résolution Small
+    // ...
+  }
+  
+  // Styles pour la résolution Medium (≥768px)
+  @media (min-width: 768px) {
+    .container {
+      padding: 30px;
+    }
+    
+    // Autres styles pour la résolution Medium
+    // ...
+  }
+  
+  // Styles pour la résolution Large (≥992px)
+  @media (min-width: 992px) {
+    .container {
+      padding: 40px;
+    }
+    
+    // Autres styles pour la résolution Large
+    // ...
+  }
+  
+  // Styles pour la résolution Extra large (≥1200px)
+  @media (min-width: 1200px) {
+    .container {
+      padding: 50px;
+    }
+    
+    // Autres styles pour la résolution Extra large
+    // ...
+  }
+  
+  // Styles pour la résolution Extra extra large (≥1400px)
+  @media (min-width: 1400px) {
+    .container {
+      padding: 60px;
+    }
+    
+    // Autres styles pour la résolution Extra extra large
+    // ...
+  }

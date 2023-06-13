@@ -1,0 +1,83 @@
+@use 'variables' as vars;
+@use "mixin_bem" as mx;
+
+.card__wrapper-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center; 
+  }
+  
+  .card__container {
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px #000;
+    background-color: white;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    width: 280px;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+  
+  .card__banner-img {
+    position: absolute;
+    background-image: url("/assets/image/dune_banner.webp");
+    height: 10rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .card__profile-img {
+    width: 8rem;
+    clip-path: circle(60px at center);
+    margin-top: 4.5rem;
+  }
+  
+  .card__name {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .card__description {
+    margin: 1rem 2rem;
+    font-size: 0.9rem;
+  }
+  
+
+
+
+  .card__links {
+    display: flex;
+    justify-content: center;
+    margin: 1.5em 0;
+  
+   
+  a {
+    text-decoration: none;
+    color: #565656;
+    transition: all 0.3s;
+    font-size: 2em;
+    margin-right: 1.2em;
+  }
+   
+  a:last-child {
+    margin: 0;
+  }
+}
+  .insta:hover {
+    color:#aa00aa;
+    transform: scale(2, 2);
+  }
+   
+  .twitter:hover {
+    color: #aa00aa;
+    transform: scale(2, 2);
+  }
+  
+  .facebook:hover {
+    color: #aa00aa;
+    transform: scale(2, 2);
+  }

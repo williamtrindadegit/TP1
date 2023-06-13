@@ -1,0 +1,89 @@
+@use 'variables' as vars;
+@use "mixin_bem" as mx;
+
+.contact {
+  background-color: vars.$color_background;
+  i {
+    padding: 0.2rem;
+  }
+}
+
+.contact__container {
+  position: relative;
+}
+.contact_carte__container {
+  position: relative;
+}
+
+.contact_form__container {
+  position: absolute;
+  top: 10%;
+  left: 52%;
+
+  z-index: 99;
+  background-color: rgb(202, 197, 197);
+  border: black 1px solid;
+  padding: 12px;
+  border-radius: 12px;
+
+  max-width: calc(30rem - 5px);
+}
+
+
+#form {
+    width: auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  
+  #form h1 {
+    color: #0f2027;
+    text-align: center;
+  }
+  
+  .btn {
+    padding: 10px;
+    margin-top: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .btn--primaire{
+    color: white;
+    background-color: rgb(43, 56, 167);
+
+  }
+  
+  .input__control {
+    display: flex;
+    flex-direction: column;
+input , textarea{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 1rem;
+    padding: 10px;
+    width: auto;
+  }
+input:focus {
+    outline: 0;
+  
+  }
+}
+  .input-control.success {input , textarea{
+    border-color: #09c372;
+  }
+}
+  .input-control.error {input ,textarea{
+    border-color: #ff3860;
+  }}
+  
+  .input-control .errorMessage {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+  }
+  

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!--index.html-->
+    <!--Par:William John Adam Trindade-->
+    <!--2023-05-22-->
+
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <link rel="stylesheet" href="style/css/style.css" >
+    <script
+      src="https://kit.fontawesome.com/23ca1c8c45.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script/validation.js"></script>
+
+    <title>Dune (Denis Villeneuve)</title>
+  </head>
+  <body>
+    <header>
+      <a href="#content" class="screen-reader-text">skip to main content</a>
+    </header>
+
+    <nav class="navbar">
+      <!-- LOGO -->
+      <div class="logo">
+        <a href="">
+          <img
+            src="assets/image/dune_logo.png"
+            alt="dune logo"
+            class="menu__logo"
+          >
+          Dune (Denis Villeneuve)
+        </a>
+      </div>
+
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links">
+        <!-- USING CHECKBOX HACK -->
+        <!-- cela fonctionne même s'il n'est pas W3C valide-->
+        <input type="checkbox" id="checkbox_toggle" >
+        <label for="checkbox_toggle" class="hamburger"
+          ><i class="fa fa-bars"></i
+        ></label>
+
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+          <li>
+            <a href="/"> <i class="fas fa-home"></i> menu 1</a>
+          </li>
+          <li>
+            <a href="/"><i class="fas fa-paperclip"></i>menu2</a>
+          </li>
+
+          <li class="dropdown__menu">
+            <a href="/"
+              ><i class="fa-solid fa-hippo"></i>menu3
+              <i class="fas fas fa-caret-down"></i
+            ></a>
+
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown__list">
+              <li><a href="/">Dropdown 1 </a></li>
+              <li><a href="/">Dropdown 2</a></li>
+              <li><a href="/">Dropdown 2</a></li>
+              <li><a href="/">Dropdown 3</a></li>
+              <li><a href="/">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li class="dropdown__menu">
+            <a href="/"
+              ><i class="fa-solid fa-gear"></i>menu4
+              <i class="fas fas fa-caret-down"></i
+            ></a>
+
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown__list">
+              <li><a href="/">Dropdown 1 </a></li>
+              <li><a href="/">Dropdown 2</a></li>
+              <li><a href="/">Dropdown 2</a></li>
+              <li><a href="/">Dropdown 3</a></li>
+              <li><a href="/">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/"><i class="fa-regular fa-user"></i>menu5</a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+
+    <!-- Carousel -->
+    <section class="carousel" aria-label="Gallery">
+      <ol class="carousel__viewport">
+        <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper">
+            <img
+              src="assets/image/dune_banner.webp"
+              class="slide__img"
+              alt="Banner"
+            >
+          </div>
+          <a href="#carousel__slide4" class="carousel__prev"
+            >Go to last slide</a
+          >
+          <a href="#carousel__slide2" class="carousel__next"
+            >Go to next slide</a
+          >
+        </li>
+        <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper">
+            <img
+              src="assets/image/dune_img1.jpg"
+              class="slide__img"
+              alt="dune image 1"
+            >
+          </div>
+
+          <a href="#carousel__slide1" class="carousel__prev"
+            >Go to previous slide</a
+          >
+          <a href="#carousel__slide3" class="carousel__next"
+            >Go to next slide</a
+          >
+        </li>
+        <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper">
+            <img
+              src="assets/image/dune_img2.jpg"
+              class="slide__img"
+              alt="Dune image 2"
+            >
+          </div>
+          <a href="#carousel__slide2" class="carousel__prev"
+            >Go to previous slide</a
+          >
+          <a href="#carousel__slide4" class="carousel__next"
+            >Go to next slide</a
+          >
+        </li>
+      </ol>
+      <aside class="carousel__navigation">
+        <ol class="carousel__navigation-list">
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide1" class="carousel__navigation-button"
+              >aller au slide 1</a
+            >
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide2" class="carousel__navigation-button"
+              >aller au slide 2</a
+            >
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide3" class="carousel__navigation-button"
+              >aller au slide 3</a
+            >
+          </li>
+        </ol>
+      </aside>
+    </section>
+
+    <hr class="separateur" >
+
+    <section class="recherche">
+        <div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+            maiores repellendus laudantium soluta atque nihil? Dolores aliquam
+            nostrum tempore, placeat vel.
+          </p>
+        </div>
+
+        <div class="recherche__container">
+            <input type="search" placeholder="text input" class="recherche__input">
+            <button class="recherche__button btn--primaire">Rechercher</button>
+        </div>
+    
+
+      <div>
+        <div class="recherche__citation recherche--border">
+          <div class="citation">
+            <h3>Litanie contre la peur</h3>
+
+
+            <blockquote>  
+              <p>Je ne connaîtrai pas la peur car la peur tue l'esprit.<br >
+                La peur est la petite mort qui conduit à l'oblitération totale.<br>
+                J'affronterai ma peur.<br >
+                Je lui permettrai de passer sur moi, au travers de moi.<br >
+                Et lorsqu'elle sera passée, je tournerai mon œil intérieur sur son
+                chemin.<br >
+                Et là où elle sera passée, il n'y aura plus rien.<br >
+                Rien que moi.</p>
+           <cite>Paul Artreides</cite>
+           </blockquote>
+
+           
+          </div>
+          <button class="recherche__button btn--primaire">Button</button>
+        </div>
+      </div>
+    </section>
+    <hr class="separateur" >
+
+    <!-- flexbox section -->
+
+    <section class="books__wrapper-flex">
+      <article class="books__container">
+        <img src="assets/image/dune_book1.jpg" alt="Dune book 1" >
+        <div class="books__text">
+          <h3>Dune - Tome I</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
+            accusamus harum aliquid odio similique veniam eum quia nisi tenetur
+            blanditiis quibusdam molestiae iusto laboriosam enim at impedit
+            unde, autem saepe?
+          </p>
+          <button>Acheter</button>
+        </div>
+      </article>
+      <article class="books__container">
+        <img src="assets/image/dune_book2.jpg" alt="Dune book 2" >
+        <div class="books__text">
+          <h3>Dune - Tome II</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ut
+            asperiores rerum dolorem distinctio! Inventore labore expedita
+            distinctio delectus alias. Quisquam at aut laudantium vitae
+            temporibus est tempore fugiat? Explicabo?
+          </p>
+          <button>Acheter</button>
+        </div>
+      </article>
+
+      <article class="books__container">
+        <img src="assets/image/dune_book3.jpg" alt="Dune book 3" >
+        <div class="books__text">
+          <h3>Dune - Tome III</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quo
+            repellendus alias possimus consequatur? Maiores ullam et saepe aut
+            magni sint qui optio cupiditate maxime! Ratione rerum incidunt eaque
+            reiciendis?
+          </p>
+          <button>Acheter</button>
+        </div>
+      </article>
+      <article class="books__container">
+        <img src="assets/image/dune_book4.jpg" alt="Dune book 4" >
+        <div class="books__text">
+          <h3>Dune - Tome IV</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            nesciunt ipsam ea, magni nobis placeat facilis, consectetur maiores
+            nihil enim ratione fugiat ipsum praesentium ex possimus explicabo
+            voluptatem, tempora omnis!
+          </p>
+          <button>Acheter</button>
+        </div>
+      </article>
+
+      <article class="books__container">
+        <img src="assets/image/dune_book5.jpg" alt="Dune book 5" >
+        <div class="books__text">
+          <h3>Dune - Tome V</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
+            deserunt incidunt rerum dolore recusandae eveniet culpa ea ipsa
+            aliquid inventore blanditiis impedit tempora fuga ex sint
+            aspernatur, voluptates est minus.
+          </p>
+          <button>Acheter</button>
+        </div>
+      </article>
+      <article class="books__container">
+        <img src="assets/image/dune_book6.jpg" alt="Dune book 6" >
+        <div class="books__text">
+          <h3>Dune - Tome VI</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+            sequi nisi? Architecto facere iure pariatur perspiciatis eius
+            incidunt ex omnis quis. Ratione iure natus accusantium ipsa, saepe
+            ut velit dolorem!
+          </p>
+          <button>Acheter</button>
+        </div>
+      </article>
+    </section>
+
+    <hr class="separateur" >
+
+    <!-- gallerie section grid-->
+    <section >
+      <div class=" section2_container section2__grid">
+        <div class="section2__img1 section2__item">
+          <img
+            src="assets/image/dune_img1.jpg"
+            class="gallery__img"
+            alt="dune image 1"
+          >
+        </div>
+        <div class="section2__img2 section2__item">
+          <img
+            src="assets/image/dune_img2.jpg"
+            class="gallery__img"
+            alt="dune image 2"
+          >
+        </div>
+        <div class="section2__img3 section2__item">
+          <img
+            src="assets/image/dune_img3.jpg"
+            class="gallery__img"
+            alt="dune image 3"
+          >
+        </div>
+        <div class="section2__img4 section2__item">
+          <img
+            src="assets/image/dune_img4.jpg"
+            class="gallery__img"
+            alt="dune image 4"
+          >
+        </div>
+        <div class="section2__img5 section2__item">
+          <img
+            src="assets/image/dune_img5.jpg"
+            class="gallery__img"
+            alt="dune image 5"
+          >
+        </div>
+        <div class="section2__img6 section2__item">
+          <img
+            src="assets/image/dune_img6.jpg"
+            class="gallery__img"
+            alt="dune image 6"
+          >
+        </div>
+      </div>
+    </section>
+    <hr class="separateur" >
+
+    <!-- statistique-->
+    <section>
+      <div class="statistique">
+        <h2>Des statistiques</h2>
+        <div class="">
+          <div class="">
+            <figure class="pie-chart">
+              <h2>Box office</h2>
+              <figcaption>
+                Asie<span class="legend__text-st1"></span><br >
+                Amerique du Nord<span class="legend__text-st2"></span><br >
+                Amerique du Sud<span class="legend__text-st3"></span><br >
+                Europe<span class="legend__text-st4"></span><br >
+                Affrique<span class="legend__text-st5"></span><br >
+                Océanie<span class="legend__text-st6"></span><br >
+              </figcaption>
+            </figure>
+            <cite>Dune (Denis Villeneuve)</cite>
+          </div>
+          <div class="statistique--text">
+            <p class="statistique__explication">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Blanditiis, ipsum dolor a corporis, magni ea tenetur perferendis
+              explicabo totam, dolores nihil veritatis officiis esse delectus
+              vero. Vel eos ad rem.
+            </p>
+
+            <button type="button" class="">Pour plus de détails</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="separateur" >
+    <!-- cards-->
+
+    <section class="card__wrapper-flex">
+      <div class="card__container">
+        <div class="card__banner-img"></div>
+        <img
+          src="assets/image/PaulArtreides.png"
+          alt="profile image"
+          class="card__profile-img"
+        >
+        <h1 class="card__name">Paul Artreides</h1>
+        <p class="card__description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
+          officia culpa ullam tempora sed harum deleniti quaerat voluptatum quo
+          enim obcaecati dolorum, nam reprehenderit neque quas ipsa aliquam,
+          nisi laudantium.
+        </p>
+
+        <div class="card__links">
+          <a class="facebook" href="" target="_blank" title="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a class="insta" href="" target="_blank" title="Instagram">
+            <i class="fab fa-instagram-square"></i>
+          </a>
+          <a class="twitter" href="" target="_blank" title="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="card__container">
+        <div class="card__banner-img"></div>
+        <img
+          src="assets/image/Chani.png"
+          alt="profile image"
+          class="card__profile-img"
+        >
+        <h1 class="card__name">Chani</h1>
+        <p class="card__description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
+          officia culpa ullam tempora sed harum deleniti quaerat voluptatum quo
+          enim obcaecati dolorum, nam reprehenderit neque quas ipsa aliquam,
+          nisi laudantium.
+        </p>
+
+        <div class="card__links">
+          <a class="facebook" href="" target="_blank" title="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a class="insta" href="" target="_blank" title="Instagram">
+            <i class="fab fa-instagram-square"></i>
+          </a>
+          <a class="twitter" href="" target="_blank" title="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="card__container">
+        <div class="card__banner-img"></div>
+        <img
+          src="assets/image/LadyJessica.png"
+          alt="profile image"
+          class="card__profile-img"
+        >
+        <h1 class="card__name">Lady Jessica</h1>
+        <p class="card__description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
+          officia culpa ullam tempora sed harum deleniti quaerat voluptatum quo
+          enim obcaecati dolorum, nam reprehenderit neque quas ipsa aliquam,
+          nisi laudantium.
+        </p>
+
+        <div class="card__links">
+          <a class="facebook" href="" target="_blank" title="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a class="insta" href="" target="_blank" title="Instagram">
+            <i class="fab fa-instagram-square"></i>
+          </a>
+          <a class="twitter" href="" target="_blank" title="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="separateur" >
+    <!-- contat-->
+    <section class="contact">
+      <div class="contact__container">
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5507.432917377031!2d-72.57107605184389!3d46.35517154379066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sca!4v1686592645894!5m2!1sfr!2sca"
+           height="588" style="border:none; background:transparent; overflow:hidden; width:100%;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="contact_form__container">
+          <h3>Un formulaire</h3>
+          <p>Lorem ipsum dolor, sit elit. Fugiat maiores quia odio.</p>
+          <form
+            id="form"
+            action="confirmation.html"
+            onsubmit="return validateInputs();"
+            method="GET"
+            novalidate
+          >
+            <div class="input__control">
+              <label for="nom" class=""></label>
+
+              <input
+                type="text"
+                class=""
+                id="nom"
+                name="nom"
+                placeholder="Nom de famille"
+                required
+              >
+              <div class="errorMessage"></div>
+            </div>
+
+            <div class="input__control">
+              <label for="prenom" class=""></label>
+              <input
+                type="text"
+                class=""
+                id="prenom"
+                name="prenom"
+                placeholder="Prénom"
+                required
+              >
+              <div class="errorMessage"></div>
+            </div>
+            <div class="input__control">
+              <label for="courriel" class=""></label>
+              <input
+                type="email"
+                class=""
+                id="courriel"
+                placeholder="Email"
+                required
+              >
+              <div class="errorMessage"></div>
+            </div>
+            <div class="input__control">
+              <label for="commentaire" class=""></label>
+              <textarea
+                class=""
+                id="commentaire"
+                placeholder="message"
+                rows="3"
+                required
+              ></textarea>
+              <div class="errorMessage"></div>
+            </div>
+            <input class="btn btn--primaire" type="submit" value="Envoyer" >
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <hr class="separateur" >
+    <!-- contat-->
+    <footer class="footer">
+      <div class="footer__logo">
+        <a href="">
+          <img src="assets/image/dune_logo.png" alt="dune logo" >
+          Dune (Denis Villeneuve)
+        </a>
+      </div>
+      <div class="footer__menu">
+        <ul>
+          <li>
+          <a href="#">
+            About us
+          </a></li>
+          <li>
+          <a href="#">
+            Features
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Pricing
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Career
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            FAQs
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Privacy Policy
+          </a>
+        </li>
+        </ul>
+      </div>
+      <hr class="separateur">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fab fa-instagram"></i></a>
+      </div>
+
+      <div class="copyright">Fait par: <a href="matilto:wjat.joi@gmail.com"> William Trindade   </a> <a href="tel:+15555555555"><i class="fas fa-phone"></i> +1 555 555 55555</a></div>
+    </footer>
+  </body>
+</html>

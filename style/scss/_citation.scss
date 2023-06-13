@@ -1,0 +1,89 @@
+// basé sur https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/
+@use 'variables' as vars;
+@use "mixin_bem" as mx;
+
+.recherche {
+    /* CSS declarations for `.block` */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "prompt";
+    @include mx.element("citation") {
+      font-size: 1.3rem;
+  
+      @include mx.modifier("italic") {
+        /* CSS declarations for `.block--modifier__element` */
+        font-style: italic;
+      }
+    }
+  
+    @include mx.modifier("center") {
+      text-align: center;
+    }
+  
+    @include mx.modifier("border") {
+      background-color: lightblue;
+      border-radius: 5%;
+      border: 1px solid black;
+    }
+  }
+
+  .recherche__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  
+  .recherche__input,.recherche__button{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 1rem;
+    padding: 10px;
+    width: auto;
+  }
+  
+
+
+blockquote {
+    color:vars.$color_text;
+    font-family: Tahoma, sans-serif;
+    font-size: 2rem;
+    width:80%;
+    margin: 0 auto;
+ }
+ blockquote h1 {
+    font-size: 2rem;
+ }
+ blockquote p {
+    font-style: italic;
+    margin-bottom: 0;
+ }
+ 
+ blockquote p::before,
+ blockquote p::after {
+    content: "“";
+    font-family: Georgia;
+    font-size: 3rem;
+    margin: -2rem 0 0 -4rem;
+    position: absolute;
+    opacity: 0.5;
+ }
+ 
+ blockquote p::after {
+    content: "”";
+    margin: -1rem -4rem 0 0;
+ }
+ 
+ blockquote cite {
+    font-size: 1.5rem;
+ }
+
+ 
